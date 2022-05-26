@@ -10,7 +10,7 @@ app.use('/users', userRoute)
 app.use('/posts', postRoute)
 
 app.use((req, res, next) => {
-  res.status(200).json({ message: 'it works, Route not found'})
+  res.status(200).json({ message: 'it works, but route not found'})
 })
 
 app.use((error, req, res, next) => {
